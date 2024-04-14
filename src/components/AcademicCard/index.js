@@ -35,7 +35,7 @@ const AcademicCard = (props) => {
     const citation = bib2json(bibtext);
     const {entries} = citation
     const citationData = entries[0].Fields
-    const {author, booktitle, journal, pages, title, year} = citationData
+    const {author, journal, year} = citationData
     console.log(citationData)
 
     const websiteUrl = details.url

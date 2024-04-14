@@ -1,0 +1,98 @@
+
+
+
+.card {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
+    border-radius: 15px; /* Add border radius if desired */
+    padding: 30px; /* Add padding to the card content */
+    list-style: none;
+    margin-bottom: 30px;
+    min-width: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.flex-pdf-bookmark{
+    display: flex;
+    justify-content: space-between;
+}
+  
+.card-footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links-flex{
+    display: flex;
+    margin-top: 20px;
+}
+
+.title{
+    color: rgb(37, 37, 37);
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    letter-spacing: -2%;
+}
+
+.book-link-style{
+    font-weight: 200;
+    color: rgb(37, 37, 37);
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.abstract{
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    color: rgb(37, 37, 37);
+    word-break: break-word;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.citations{
+    color: rgb(37, 37, 37);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.buttons-container{
+    margin-top: 20px;
+    display: flex;
+}
+
+.cited-by{
+    margin-right:"10px";
+    font-size: 16px;
+}
+
+.academic-cite-button{
+    color: 'green';
+    background-color: 'white';
+    margin-right: '10px';
+    text-transform: 'none';
+}
+
+.academic-explore-button{
+    color: 'white';
+    text-transform: 'none';
+}
+
+
+
+@media screen and (min-width:576px){
+    .academic-cite-button{
+        min-height: 50px;
+        min-width: 100px; ;
+    }
+
+    .academic-explore-button{
+        color: 'white';
+        text-transform: 'none';
+    }
+}

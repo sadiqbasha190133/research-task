@@ -15,7 +15,6 @@ import './index.css';
 const AcademicCard = (props) => {
 
     const {details} = props
-    const siteUrl = details.url
     console.log("this is details data: ",details)
     const url = details.openAccessPdf?.url
     let totalDomain = null
@@ -67,7 +66,7 @@ const AcademicCard = (props) => {
                     Cite
                 </Button>
                 <Button variant="contained" color="success" style={{ color: 'white', textTransform: 'none' }}>
-                    <a href={siteUrl}>Explore</a>
+                    <a href={url} style={{color: 'white', textDecoration: 'none'}}>Explore</a>
                 </Button>
             </div>
         </div>

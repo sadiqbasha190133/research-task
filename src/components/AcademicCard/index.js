@@ -15,6 +15,7 @@ import './index.css';
 const AcademicCard = (props) => {
 
     const {details} = props
+    const siteUrl = details.url
     console.log("this is details data: ",details)
     const url = details.openAccessPdf?.url
     let totalDomain = null
@@ -24,7 +25,6 @@ const AcademicCard = (props) => {
         console.log(totalDomain); // Output: "arxiv.org"
     }
     
-
     const [isBookmarked, setIsBookmarked] = useState(false);
 
     const toggleBookmark = () => {
@@ -67,7 +67,7 @@ const AcademicCard = (props) => {
                     Cite
                 </Button>
                 <Button variant="contained" color="success" style={{ color: 'white', textTransform: 'none' }}>
-                    Explore
+                    <a href={siteUrl}>Explore</a>
                 </Button>
             </div>
         </div>

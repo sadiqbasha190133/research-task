@@ -46,7 +46,7 @@ function SearchInputWithToggle() {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <div style={{ cursor: 'pointer' }}> {/* Add pointer cursor to the div */}
+                <div style={{ cursor: 'pointer' }}> 
                   <SearchIcon />
                 </div>
               </InputAdornment>
@@ -64,8 +64,8 @@ function SearchInputWithToggle() {
               </InputAdornment>
             ),
             sx: {
-              borderRadius: '30px', // Adjust the border radius as needed
-              borderColor: isFocused ? 'red' : 'text.disabled', // Set the border color based on focus state to success color
+              borderRadius: '30px', 
+              borderColor: isFocused ? 'red' : 'text.disabled', 
             },
           }}
           onFocus={handleFocus}

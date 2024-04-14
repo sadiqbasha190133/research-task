@@ -1,36 +1,4 @@
 
-// import React from 'react';
-// import { useLocation, useNavigate } from 'react-router-dom';
-// import IconButton from '@mui/material/IconButton';
-// import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-
-// const SearchResults = () => {
-//     const location = useLocation();
-//     const navigate = useNavigate();
-//     const queryParams = new URLSearchParams(location.search);
-//     const query = queryParams.get('query');
-
-//     const handleBack = () => {
-//         // Implement your back logic here
-//         // For example, navigate back to the previous page
-//         navigate("/")
-
-//     };
-
-//     return (
-//         <div>
-//             <div>
-//                 <IconButton aria-label="back" onClick={handleBack}>
-//                     <ArrowBackIcon />
-//                     Back
-//                 </IconButton>
-//             </div>
-//         </div>
-        
-//     );
-// }
-
-// export default SearchResults;
 
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -55,8 +23,6 @@ const SearchResults = () => {
     const [isLoading, setLoadingStatus] = useState(false)
 
     const handleBack = () => {
-        // Implement your back logic here
-        // For example, navigate back to the previous page
         navigate("/");
     };
 
@@ -141,14 +107,6 @@ const SearchResults = () => {
                     : nonAcademicData?.map(eachObject=><AcademicCard key={eachObject.paperId} details = {eachObject}/>)
 
                 }
-                
-                {/* {academicStatus?academicData?.map(eachObject=><AcademicCard key={eachObject.paperId} details = {eachObject}/>)
-                : nonAcademicData?.map(eachObject=><AcademicCard key={eachObject.paperId} details = {eachObject}/>)} */}
-                
-
-
-                {/* {apiData?.map(eachObject=><AcademicCard key={eachObject.paperId} details = {eachObject}/>)} */}
-                {/* {console.log("this is apiData:", apiData)} */}
 
             </ul>
 

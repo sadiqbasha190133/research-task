@@ -9,8 +9,7 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import bib2json from 'bib2json';
 import Button from '@mui/material/Button';
-import './index.css'; // Import CSS file for styling
-
+import './index.css'; 
 
 
 const AcademicCard = (props) => {
